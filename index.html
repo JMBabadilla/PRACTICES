@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity 5</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <title>Online Library</title>
+    <style>
+    @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+</style>
+
+</head>
+<body>
     
+  <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>Carousel Template · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+    
+
+    
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -16,6 +51,10 @@
         -webkit-user-select: none;
         -moz-user-select: none;
         user-select: none;
+      }
+
+      .carousel-inner img{
+        height: 300px;
       }
 
       @media (min-width: 768px) {
@@ -64,12 +103,14 @@
 
     
     <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
   </head>
   <body>
+    
 <header>
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Activity 5</a>
+      <a class="navbar-brand" href="#">Carousel</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -79,12 +120,16 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#">Link</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link">Contact Us</a>
+            <a class="nav-link disabled">Disabled</a>
           </li>
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
       </div>
     </div>
   </nav>
@@ -100,13 +145,13 @@
     </div>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="https://www.apple.com/v/iphone-14-pro/c/images/overview/hero/hero_endframe__dtzvajyextyu_large.jpg" class="d-block h-50 w-100" alt="Wild Landscape"/>
+        <img src="https://static.wixstatic.com/media/005028_6b3b5e37cd0a4e0db7c9488f50353acc~mv2.png/v1/fill/w_560,h_300,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/BOOK%20SALE.png" class="d-block w-100" style="height: 400px;"/>
       </div>
       <div class="carousel-item active">
-        <img src="https://i.pcmag.com/imagery/reviews/03POP0TjDjuXonJXI16Omn2-1.fit_scale.size_760x427.v1663720055.jpg" class="d-block h-50 w-100" alt="Camera"/>
+        <img src="https://cdn1.clickthecity.com/wp-content/uploads/2021/06/18115509/Big-Bad-Wolf-Book-Sale-Online-1-1.png" class="d-block w-100" style="height: 400px;"/>
       </div>
       <div class="carousel-item active">
-        <img src="https://www.reviewgeek.com/p/uploads/2021/01/1e871425-1.png?height=200p&trim=2,2,2,2" class="d-block w-100" alt="Exotic Fruits"/>
+        <img src="https://woodlibrary.org/wp-content/uploads/2021/09/Book-Sale.png" class="d-block w-100" style="height: 400px;"/>
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
@@ -119,104 +164,80 @@
     </button>
   </div>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
-      <h3 class="text-center">Featured</h3>
-  </nav>
 
-  <div class="container">
-    <div class="d-inline-flex">
-   <!-- 1st card -->
-      <hr>
-          <div class="card m-3 text-center" style="width: 18rem;">
-              <img src="https://images.macrumors.com/t/xEwxomFd78nKKME8fPQVG5pDIfE=/x/smart/article-new/2022/09/The-Verge-iPhone-14-Pro.jpg" class="card-img-top h-50" alt="">
-              <div class="card-body">
-                  <h5 class="card-title">Hello</h5>
-                  <p class="card-tex">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident magni autem saepe facere labore! Eos, illo? Optio iste doloremque provident ad, voluptates delectus quas odit, illo exercitationem repellendus in sint?</p>
-                  <a href="#" class="btn btn-primary">go somewhere</a>
-              </div>
-      </div>
-  <!-- 2nd card -->
-      <div class="card m-3 text-center" style="width: 18rem;">
-      <img src="https://i.blogs.es/b8a473/1366_2000/500_500.jpeg" class="card-img-top" alt="">
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+    <p class="text-center fst-italic">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatum perferendis quam in rerum provident labore, cum assumenda aperiam accusantium quo pariatur laboriosam excepturi qui, temporibus ratione impedit eum. Nisi!</p>
+  <div class="row">
+ <!-- 1st card -->
+        <div class="col-lg-3 card text-center" style="width: 120; height: 400px;">
+          <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388463189l/19374.jpg" class="card-img-top h-50" style= "height: 300px;">
+          <div class="card-body">
+            <h5 class="card-title">Adventures of Huckleberry Finn</h5>
+              <p class="card-tex">Author: Mark Twain</p>
+              <p class="card-tex">Year Published: 1884</p>
+              <a href="#" class="btn btn-primary">Add to Cart</a><a href="#" class="btn btn-primary">Add to Whistlist</a>
+            </div>
+    </div>
+<!-- 2nd card -->
+    <div class="col-lg-3 card text-center" style="width: 120; height: 400px;">
+      <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388463189l/19374.jpg" class="card-img-top h-50" style= "height: 300px;">
       <div class="card-body">
-          <h5 class="card-title">Hello</h5>
-          <p class="card-tex">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident magni autem saepe facere labore! Eos, illo? Optio iste doloremque provident ad, voluptates delectus quas odit, illo exercitationem repellendus in sint?</p>
-          <a href="#" class="btn btn-primary">go somewhere</a>
-      </div>
-      </div>
-      <!-- 3rd card -->
-      <div class="card m-3 text-center" style="width: 18rem;">
-        <img src="https://www.91-img.com/gallery_images_uploads/5/8/588d43a38403fdceb3dfc30b8d537974ef88699e.JPG?tr=h-550,w-0,c-at_max" class="card-img-top" alt="">
-        <div class="card-body">
-            <h5 class="card-title">Hello</h5>
-            <p class="card-tex">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident magni autem saepe facere labore! Eos, illo? Optio iste doloremque provident ad, voluptates delectus quas odit, illo exercitationem repellendus in sint?</p>
-            <a href="#" class="btn btn-primary">go somewhere</a>
-          </div>
+        <h5 class="card-title">Adventures of Huckleberry Finn</h5>
+          <p class="card-tex">Author: Mark Twain</p>
+          <p class="card-tex">Year Published: 1884</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a><a href="#" class="btn btn-primary">Add to Whistlist</a>
+    </div>
+    </div>
+    <!-- 3rd card -->
+    <div class="col-lg-3 card  text-center" style="width: 120; height: 400px;">
+      <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388463189l/19374.jpg" class="card-img-top h-50" style= "height: 300px;">
+      <div class="card-body">
+        <h5 class="card-title">Adventures of Huckleberry Finn</h5>
+          <p class="card-tex">Author: Mark Twain</p>
+          <p class="card-tex">Year Published: 1884</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a><a href="#" class="btn btn-primary">Add to Whistlist</a>
         </div>
-        <!-- 4th card -->
-      <div class="card m-3 text-center" style="width: 18rem;">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaiKm6SqJsWUPmKc5_9Hhk4QbM5IWvB6MXTrQahR4cAiR86Z1A5dSkMoyIg4oSy-vBC3s&usqp=CAU" class="card-img-top h-50" alt="">
-        <div class="card-body">
-            <h5 class="card-title">Hello</h5>
-            <p class="card-tex">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident magni autem saepe facere labore! Eos, illo? Optio iste doloremque provident ad, voluptates delectus quas odit, illo exercitationem repellendus in sint?</p>
-            <a href="#" class="btn btn-primary">go somewhere</a>
-          </div>
+      </div>
+      <!-- 4th card -->
+    <div class="col-lg-3 card text-center" style="width: 120; height: 400px;">
+      <img src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1388463189l/19374.jpg" class="card-img-top h-50" style= "height: 300px;">
+      <div class="card-body">
+        <h5 class="card-title">Adventures of Huckleberry Finn</h5>
+          <p class="card-tex">Author: Mark Twain</p>
+          <p class="card-tex">Year Published: 1884</p>
+          <a href="#" class="btn btn-primary">Add to Cart</a><a href="#" class="btn btn-primary">Add to Whistlist</a>
         </div>
+      </div>
 
-    </div>
-  </div> 
-
-  <!-------------------------------------------------------------------------------------- Carousel --------------------------------------------------------------------------->
-  <hr class="featurette-divider">
-
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-      <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-    </div>
-    <div class="col-md-5">
-      <img src="https://www.01net.com/app/uploads/2022/09/3506-mea_1400.jpg" width="500" height="500">
-    </div>
   </div>
+  <a class="btn btn-light align-items-center" href="/Checkout form 2.html" style="margin-top: 10px; margin-bottom: 10px; margin-inline-end: auto;">Checkout</a>
+</div> 
 
-  <hr class="featurette-divider">
 
-  <div class="row featurette">
-    <div class="col-md-7 order-md-2">
-      <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-      <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
-    </div>
-    <div class="col-md-5 order-md-1">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC_gRP4dtGt7OGbMxR76Ajz3QSs5HtUewrag&usqp=CAU" width="500" height="500">
-    </div>
-  </div>
+    
 
-  <hr class="featurette-divider">
 
-  <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-      <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-    </div>
-    <div class="col-md-5">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRktwgDUgYmAtnedgz6RWFuU1uVfGH_nWKEpjLhk1RLuFJx0XiVibz9KThHU_uNhM-0dr0&usqp=CAU" width="500" height="500">
-    </div>
-  </div>
 
-  <hr class="featurette-divider">
+    
 
   <!-- FOOTER -->
-  <footer class="container justify-content-center">
-      <h5 class="text-center">KodeGo Bootcamp</h5>
-      <p class="text-center">Web Development Batch 52</p>
-      <p class="text-center">Activity 5 - <a href="" class="text-center">HTML</a>|<a href="" class="text-center">CSS</a>|<a href="" class="text-center">Bootstrap</a></p>
-      <p class="text-center fst-italic">All Rights reserved 2023</p>    
+  <footer class="container">
+    <p class="float-end"><a href="#">Back to top</a></p>
+    <p>&copy; 2017–2022 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
   </footer>
 </main>
 
 
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
-  
+      
   </body>
+</html>
+
+    
+</body>
 </html>
